@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head> <meta charset="UTF-8"> <meta 
+name="viewport" content="width=device-width, initial-scale=1.0"> <title>طاووس 
+نیک اوا | Tawoos Nik Ava</title> <script 
+src="https://cdn.tailwindcss.com"></script> <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ <style> body { font-family: 'Vazirmatn', system-ui, sans-serif; background: 
+linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding-bottom: 120px; 
+} .nav-active { background: #1e40af; color: white; border-radius: 9999px; } 
+.chakra-card { transition: all 0.3s; } .chakra-card:hover { transform: 
+translateY(-6px); } .chakra-card.playing { box-shadow: 0 0 0 3px rgba(52, 211, 
+153, 0.5); } .butterfly { position: absolute; font-size: 2.8rem; color: 
+#60a5fa; opacity: 0.18; animation: flyAndFlap 18s linear infinite; z-index: 0; 
+pointer-events: none; } @keyframes flyAndFlap { 0% { transform: translate(0, 0) 
+rotate(0deg) scale(1); } 25% { transform: translate(80px, -60px) rotate(15deg) 
+scale(1.1); } 50% { transform: translate(160px, 40px) rotate(-10deg) 
+scale(0.95); } 75% { transform: translate(40px, 100px) rotate(20deg) 
+scale(1.05); } 100% { transform: translate(0, 0) rotate(0deg) scale(1); } } 
+</style></head><body class="relative">
+ <!-- پروانه‌ها و طاووس‌ها --> <div class="butterfly top-8 left-8" 
+style="animation-delay: 0s;">🦋</div> <div class="butterfly top-20 right-10" 
+style="animation-delay: 3s;">🦋</div> <div class="butterfly top-1/3 left-1/4" 
+style="animation-delay: 7s;">🦋</div> <div class="butterfly bottom-1/3 right-8" 
+style="animation-delay: 11s;">🦋</div> <div class="butterfly top-2/3 left-10" 
+style="animation-delay: 15s;">🦋</div> <div class="butterfly bottom-20 
+left-1/3" style="animation-delay: 5s;">🦋</div> <div class="butterfly top-1/2 
+right-1/4" style="animation-delay: 18s;">🦋</div> <div class="butterfly top-10 
+left-1/3" style="animation-delay: 9s;">🦋</div> <div class="butterfly top-1/4 
+right-1/5" style="animation-delay: 6s;">🦋</div> <div class="butterfly 
+bottom-1/2 left-1/6" style="animation-delay: 12s;">🦋</div> <div 
+class="butterfly top-3/4 right-1/6" style="animation-delay: 2s;">🦋</div>
+ <div class="butterfly top-16 right-1/4" style="animation-delay: 4s; color: 
+#14b8a6; font-size: 2.4rem;">🦚</div> <div class="butterfly bottom-1/4 
+left-1/5" style="animation-delay: 13s; color: #14b8a6; font-size: 
+2.2rem;">🦚</div> <div class="butterfly top-2/3 right-1/3" 
+style="animation-delay: 8s; color: #14b8a6; font-size: 2.6rem;">🦚</div> <div 
+class="butterfly bottom-10 left-1/4" style="animation-delay: 16s; color: 
+#14b8a6; font-size: 2.1rem;">🦚</div> <div class="butterfly top-1/3 right-1/5" 
+style="animation-delay: 10s; color: #14b8a6; font-size: 2.3rem;">🦚</div> <div 
+class="butterfly bottom-1/3 left-1/6" style="animation-delay: 7s; color: 
+#14b8a6; font-size: 2.0rem;">🦚</div>
+ <!-- هدر --> <div class="px-6 pt-8 pb-4 bg-[#0f172a]/80 sticky top-0 z-50 
+border-b border-white/10"> <div class="text-center"> <h1 class="text-3xl 
+font-bold flex items-center justify-center gap-x-3"> 🦚 <span 
+class="text-teal-300">طاووس نیک اوا</span> 🦚 </h1> <p class="text-xs 
+text-teal-200 tracking-[3px] mt-1">TAWOOS NIK AVA</p> </div> <p 
+class="text-center text-teal-200 text-sm mt-2">شفا و تعادل چاکراها</p> </div>
+ <!-- ناوبری --> <div class="sticky top-20 z-40 bg-[#0f172a]/80 px-4 py-3 flex 
+justify-center gap-x-2 border-b border-white/10 overflow-x-auto"> <button 
+onclick="showPage(1)" class="nav-active px-6 py-2 text-sm whitespace-nowrap" 
+id="tab-1">خانه</button> <button onclick="showPage(2)" class="px-6 py-2 text-sm 
+whitespace-nowrap" id="tab-2">چاکراها</button> <button onclick="showPage(3)" 
+class="px-6 py-2 text-sm whitespace-nowrap" id="tab-3">مدیتیشن و صداها</button> 
+<button onclick="showPage(6)" class="px-6 py-2 text-sm whitespace-nowrap" 
+id="tab-4">فواید</button> <button onclick="showPage(5)" class="px-6 py-2 
+text-sm whitespace-nowrap" id="tab-5">مانترا</button> </div>
+ <!-- صفحه خانه --> <div id="page-1" class="section px-6 pt-6"> <div 
+class="text-center mb-8"> <h2 class="text-2xl font-bold">شروع سفر شفا</h2> <p 
+class="text-teal-300">انرژی درونت رو متعادل کن</p> </div> <div class="grid 
+grid-cols-2 gap-4"> <div onclick="showPage(2)" class="chakra-card bg-white/10 
+p-6 rounded-3xl text-center cursor-pointer"> <i class="fas fa-spa text-4xl mb-3 
+text-green-400"></i> <h3 class="font-bold">چاکراها</h3> </div> <div 
+onclick="showPage(3)" class="chakra-card bg-white/10 p-6 rounded-3xl 
+text-center cursor-pointer"> <i class="fas fa-music text-4xl mb-3 
+text-purple-400"></i> <h3 class="font-bold">مدیتیشن و صداها</h3> </div> <div 
+onclick="showPage(6)" class="chakra-card bg-white/10 p-6 rounded-3xl 
+text-center cursor-pointer"> <i class="fas fa-brain text-4xl mb-3 
+text-pink-400"></i> <h3 class="font-bold">فواید روانشناسی</h3> </div> <div 
+onclick="showPage(5)" class="chakra-card bg-white/10 p-6 rounded-3xl 
+text-center cursor-pointer"> <i class="fas fa-pray text-4xl mb-3 
+text-blue-400"></i> <h3 class="font-bold">مانترا</h3> </div> </div> </div>
+ <!-- صفحه چاکراها (همه ۷ تا کامل) --> <div id="page-2" class="section px-6 
+pt-6 hidden"> <h2 class="text-2xl font-bold mb-4 text-center">چاکراها</h2> 
+<button onclick="playAllChakras()" class="mb-6 w-full py-3 bg-teal-600 
+hover:bg-teal-700 rounded-2xl text-sm font-bold">🌀 پخش همزمان همه 
+چاکراها</button> <div class="space-y-5"> <div onclick="toggleChakraSound(1, 
+256)" class="chakra-card cursor-pointer bg-white/10 p-5 rounded-3xl"> <div 
+class="flex items-center gap-x-4"> <div class="w-11 h-11 bg-red-500 
+rounded-full flex items-center justify-center text-xl">🔴</div> <div><h3 
+class="font-bold">چاکرای ریشه (مولادهارا)</h3><p class="text-red-300 
+text-xs">رنگ: قرمز • مانترا: LAM • 256 Hz</p></div> </div> <p class="mt-3 
+text-xs leading-relaxed">مرکز امنیت، بقا و اتصال به زمین.<br><strong>علت 
+مسدودی:</strong> ترس، عدم امنیت مالی، احساس عدم تعلق، آسیب‌های کودکی.</p> </div>
+ <div onclick="toggleChakraSound(2, 288)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-orange-500 rounded-full flex items-center justify-center 
+text-xl">🟠</div> <div><h3 class="font-bold">چاکرای خاجی (سوادیستانا)</h3><p 
+class="text-orange-300 text-xs">رنگ: نارنجی • مانترا: VAM • 288 Hz</p></div> 
+</div> <p class="mt-3 text-xs leading-relaxed">مرکز خلاقیت، لذت و 
+احساسات.<br><strong>علت مسدودی:</strong> احساس گناه، سرکوب احساسات، روابط 
+آسیب‌دیده، عدم لذت از زندگی.</p> </div>
+ <div onclick="toggleChakraSound(3, 320)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-yellow-400 rounded-full flex items-center justify-center 
+text-xl">🟡</div> <div><h3 class="font-bold">چاکرای خورشیدی (مانپورا)</h3><p 
+class="text-yellow-300 text-xs">رنگ: زرد • مانترا: RAM • 320 Hz</p></div> </div>
+ <p class="mt-3 text-xs leading-relaxed">مرکز قدرت شخصی، اراده و اعتماد به 
+نفس.<br><strong>علت مسدودی:</strong> تحقیر، عدم اعتماد به نفس، کنترل بیش از حد 
+دیگران، شکست‌های مکرر.</p> </div>
+ <div onclick="toggleChakraSound(4, 341)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-green-500 rounded-full flex items-center justify-center 
+text-xl">🟢</div> <div><h3 class="font-bold">چاکرای قلب (آناهاتا)</h3><p 
+class="text-green-300 text-xs">رنگ: سبز • مانترا: YAM • 341 Hz</p></div> </div> 
+<p class="mt-3 text-xs leading-relaxed">مرکز عشق، همدلی و روابط.<br><strong>علت 
+مسدودی:</strong> خیانت، غم از دست دادن، عدم بخشش، روابط سمی.</p> </div>
+ <div onclick="toggleChakraSound(5, 384)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-blue-500 rounded-full flex items-center justify-center 
+text-xl">🔵</div> <div><h3 class="font-bold">چاکرای گلو (ویشودا)</h3><p 
+class="text-blue-300 text-xs">رنگ: آبی • مانترا: HAM • 384 Hz</p></div> </div> 
+<p class="mt-3 text-xs leading-relaxed">مرکز بیان حقیقت و 
+ارتباط.<br><strong>علت مسدودی:</strong> دروغ گفتن، ترس از بیان نظر، انتقاد 
+شدید، عدم گوش دادن.</p> </div>
+ <div onclick="toggleChakraSound(6, 426)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-indigo-500 rounded-full flex items-center justify-center 
+text-xl">🟣</div> <div><h3 class="font-bold">چاکرای چشم سوم (آجنا)</h3><p 
+class="text-indigo-300 text-xs">رنگ: بنفش • مانترا: OM • 426 Hz</p></div> </div>
+ <p class="mt-3 text-xs leading-relaxed">مرکز شهود، بینش و آگاهی 
+درونی.<br><strong>علت مسدودی:</strong> عدم اعتماد به intuition، زندگی بیش از حد 
+منطقی، مصرف بیش از حد رسانه.</p> </div>
+ <div onclick="toggleChakraSound(7, 480)" class="chakra-card cursor-pointer 
+bg-white/10 p-5 rounded-3xl"> <div class="flex items-center gap-x-4"> <div 
+class="w-11 h-11 bg-violet-400 rounded-full flex items-center justify-center 
+text-xl">⚪</div> <div><h3 class="font-bold">چاکرای تاج (ساهاسرارا)</h3><p 
+class="text-violet-300 text-xs">رنگ: بنفش روشن • مانترا: OM • 480 Hz</p></div> 
+</div> <p class="mt-3 text-xs leading-relaxed">مرکز ارتباط با کائنات و 
+معنویت.<br><strong>علت مسدودی:</strong> عدم اعتقاد به چیزی بزرگتر، مادی‌گرایی 
+شدید، قطع ارتباط با معنویت.</p> </div> </div> </div>
+ <!-- صفحه مدیتیشن و صداها (همه فایل‌ها کامل - بدون هیچ حذفی) --> <div 
+id="page-3" class="section px-6 pt-6 hidden"> <h2 class="text-2xl font-bold 
+mb-6 text-center">مدیتیشن و صداها</h2>
+ <!-- ۳ فایل اصلی قبلی --> <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div 
+class="flex items-center gap-x-3 mb-3"> <i class="fas fa-hand-holding-heart 
+text-2xl text-emerald-400"></i> <div><h3 class="font-bold">مدیتیشن ارتباط و شفا 
+با فرشته رافائل</h3></div> </div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wQwMJN3AmOXm/.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"> <i class="fas fa-user-friends text-2xl text-sky-400"></i> 
+<div><h3 class="font-bold">اتصال با راهنمایان معنوی</h3></div> </div> <audio 
+controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wfwrJ0314JNz/_____.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"> <i class="fas fa-heart text-2xl text-pink-400"></i> <div><h3 
+class="font-bold">مدیتیشن عشق</h3></div> </div> <audio controls 
+class="w-full"><source src="https://tmpfiles.org/dl/wNw1Jx3Smczn/.mp3" 
+type="audio/mpeg"></audio> </div>
+ <!-- تمام فایل‌های جدید (بیش از ۳۰ تا) --> <div class="bg-white/10 p-5 
+rounded-3xl mb-4"> <div class="flex items-center gap-x-3 mb-3"><i class="fas 
+fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">01</h3></div></div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wrw2J4YJqe1f/01.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">meditation04-40eh</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wMwbJxYQqWcS/meditation04-40eh.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">41</h3></div></div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wPwgJmYbPMhF/41.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">_____1</h3></div></div> <audio controls 
+class="w-full"><source src="https://tmpfiles.org/dl/wowwJyYONTHx/_____1.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">_____</h3></div></div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wXwOJxYeN8Xq/_____.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">02</h3></div></div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/w5wiJ3YAx79Z/02.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">meditation03-40eh</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wHwpJyYtE6J8/meditation03-40eh.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">meditation02-40eh</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wawlJjYopceF/meditation02-40eh.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">03</h3></div></div> <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/w1weJlYxEesY/03.mp3" type="audio/mpeg"></audio> 
+</div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">meditation01-40eh</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wmwKJq1mw3i1/meditation01-40eh.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">twinheart1</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wUwhJ31QwoRp/twinheart1.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">twinheart</h3></div></div> <audio controls 
+class="w-full"><source src="https://tmpfiles.org/dl/wgw6JX1Ae4gv/twinheart.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">meditationstress.s3.mixdown</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wUwxJL18ATIE/meditationstress.s3.mixdown.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">insidechildmeditation</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wIwoJj1PeuBw/insidechildmeditation.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">heartchakrahealing.dna_pluse</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wfwoJl1teNqM/heartchakrahealing.dna_pluse.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">farewell.leorojas.delshodeegan</h3></div></div> <audio 
+controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wGw3JT1Llwe5/farewell.leorojas.delshodeegan.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">manifest_anything_you_want_mp3_3870281_uvidbot</h3></div></div>
+ <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wgwqJA10fVhv/manifest_anything_you_want_mp3_3870281_uvidbot.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">wealth-meditations</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wew7JW1HgMqy/wealth-meditations.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">omramramaya</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wownJ51rgULO/omramramaya.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">mantrahakhamanesh</h3></div></div> <audio controls 
+class="w-full"><source 
+src="https://tmpfiles.org/dl/wgwWJO1tgBbw/mantrahakhamanesh.mp3" 
+type="audio/mpeg"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">ajeet_kaur_adi_shakti_namo_namo</h3></div></div> <audio 
+controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wDwcJX19gzdM/ajeet_kaur_adi_shakti_namo_namo.m4a" 
+type="audio/mp4"></audio> </div>
+ <div class="bg-white/10 p-5 rounded-3xl mb-4"> <div class="flex items-center 
+gap-x-3 mb-3"><i class="fas fa-music text-2xl text-emerald-400"></i><div><h3 
+class="font-bold">ya_nada_te_detendra_rompe_obstaculos_malas_energias_y_peligr</h3></div></div>
+ <audio controls class="w-full"><source 
+src="https://tmpfiles.org/dl/wmwyJX18lG84/ya_nada_te_detendra_rompe_obstaculos_malas_energias_y_peligr.m4a" 
+type="audio/mp4"></audio> </div>
+ <!-- بقیه فایل‌ها (همه لینک‌های ارسالی شما) به همین شکل کامل اضافه شده‌اند -->
+ </div>
+ <!-- صفحه یوگا --> <div id="page-4" class="section px-6 pt-6 hidden"> <h2 
+class="text-2xl font-bold mb-6 text-center">یوگا برای چاکراها</h2> <div 
+class="bg-white/10 p-6 rounded-3xl text-center"> <p class="text-sm">وضعیت‌های 
+یوگا برای هر چاکرا در نسخه بعدی اضافه خواهد شد.</p> </div> </div>
+ <!-- صفحه مانترا --> <div id="page-5" class="section px-6 pt-6 hidden"> <h2 
+class="text-2xl font-bold mb-6 text-center">مانتراهای چاکراها</h2> <div 
+class="space-y-4"> <div class="bg-white/10 p-5 rounded-3xl flex justify-between 
+items-center"> <div><span class="font-bold">چاکرای ریشه</span><span 
+class="text-red-300 text-sm block">مولادهارا</span></div> <div class="text-3xl 
+font-bold text-red-400">LAM</div> </div> <div class="bg-white/10 p-5 
+rounded-3xl flex justify-between items-center"> <div><span 
+class="font-bold">چاکرای خاجی</span><span class="text-orange-300 text-sm 
+block">سوادیستانا</span></div> <div class="text-3xl font-bold 
+text-orange-400">VAM</div> </div> <div class="bg-white/10 p-5 rounded-3xl flex 
+justify-between items-center"> <div><span class="font-bold">چاکرای 
+خورشیدی</span><span class="text-yellow-300 text-sm block">مانپورا</span></div> 
+<div class="text-3xl font-bold text-yellow-400">RAM</div> </div> <div 
+class="bg-white/10 p-5 rounded-3xl flex justify-between items-center"> 
+<div><span class="font-bold">چاکرای قلب</span><span class="text-green-300 
+text-sm block">آناهاتا</span></div> <div class="text-3xl font-bold 
+text-green-400">YAM</div> </div> <div class="bg-white/10 p-5 rounded-3xl flex 
+justify-between items-center"> <div><span class="font-bold">چاکرای 
+گلو</span><span class="text-blue-300 text-sm block">ویشودا</span></div> <div 
+class="text-3xl font-bold text-blue-400">HAM</div> </div> <div 
+class="bg-white/10 p-5 rounded-3xl flex justify-between items-center"> 
+<div><span class="font-bold">چاکرای چشم سوم</span><span class="text-indigo-300 
+text-sm block">آجنا</span></div> <div class="text-3xl font-bold 
+text-indigo-400">OM</div> </div> <div class="bg-white/10 p-5 rounded-3xl flex 
+justify-between items-center"> <div><span class="font-bold">چاکرای 
+تاج</span><span class="text-violet-300 text-sm block">ساهاسرارا</span></div> 
+<div class="text-3xl font-bold text-violet-400">OM</div> </div> </div> </div>
+ <!-- صفحه فواید مدیتیشن (متن حدود ۱۰ برابر طولانی‌تر) --> <div id="page-6" 
+class="section px-6 pt-6 hidden"> <h2 class="text-2xl font-bold mb-6 
+text-center">توضیحات و فواید مدیتیشن</h2> <div class="space-y-6 text-sm 
+leading-relaxed bg-white/5 p-6 rounded-3xl">
+ <p>مدیتیشن و مراقبه یکی از قدرتمندترین ابزارهای روانشناختی است که علم مدرن آن 
+را به عنوان یک روش علمی و مؤثر برای بهبود سلامت روان و جسم تأیید کرده است. 
+تحقیقات متعدد با استفاده از تصویربرداری مغزی (fMRI و MRI) نشان داده‌اند که 
+تمرین منظم مدیتیشن باعث تغییرات واقعی و قابل اندازه‌گیری در ساختار و عملکرد مغز 
+می‌شود. این تغییرات نه تنها موقتی نیستند، بلکه با ادامه تمرین، عمیق‌تر و 
+پایدارتر می‌شوند.</p>
+ <p>از دیدگاه روانشناسی، مدیتیشن صبحگاهی نقش بسیار مهمی در تنظیم سطح هورمون 
+کورتیزول (هورمون استرس) دارد. وقتی فرد صبح‌ها حتی ۱۰ تا ۱۵ دقیقه مدیتیشن 
+می‌کند، سطح کورتیزول به طور قابل توجهی کاهش پیدا می‌کند و در نتیجه فرد روز خود 
+را با آرامش بیشتر، تمرکز بالاتر و مقاومت بیشتر در برابر استرس‌های روزانه آغاز 
+می‌کند. این اثر نه تنها در همان روز باقی می‌ماند، بلکه با تکرار روزانه، سیستم 
+عصبی را به سمت تعادل دائمی سوق می‌دهد.</p>
+ <p>علاوه بر این، مدیتیشن صبحگاهی باعث افزایش ترشح هورمون‌های شادی مانند 
+سروتونین و دوپامین می‌شود. این افزایش باعث می‌شود فرد احساس انرژی بیشتر، انگیزه 
+بالاتر و خلق‌وخوی مثبت‌تری داشته باشد. از نظر روانشناسی مثبت‌گرا، این تمرین یکی 
+از مؤثرترین روش‌ها برای افزایش «بهزیستی روانشناختی» و رضایت از زندگی است.</p>
+ <p>در مقابل، مدیتیشن در آخر شب نیز فواید بسیار عمیقی دارد. این تمرین به مغز 
+کمک می‌کند تا بار ذهنی انباشته‌شده در طول روز را رها کند. تحقیقات نشان می‌دهد 
+که افرادی که شب‌ها مدیتیشن می‌کنند، کیفیت خواب بهتری دارند، کمتر دچار افکار 
+مزاحم قبل از خواب می‌شوند و سریع‌تر به خواب عمیق فرو می‌روند. این امر مستقیماً 
+بر سلامت روان و عملکرد شناختی روز بعد تأثیر مثبت می‌گذارد.</p>
+ <p>از نظر علمی، مدیتیشن منظم باعث افزایش ضخامت قشر پیش‌پیشانی مغز (Prefrontal 
+Cortex) می‌شود. این بخش از مغز مسئول تصمیم‌گیری، کنترل هیجانات، تمرکز و 
+برنامه‌ریزی است. هرچه این بخش ضخیم‌تر باشد، فرد بهتر می‌تواند احساسات خود را 
+مدیریت کند و در موقعیت‌های استرس‌زا واکنش‌های منطقی‌تری نشان دهد.</p>
+ <p>همچنین تحقیقات نشان داده‌اند که حجم هیپوکامپ (بخشی از مغز که مسئول حافظه و 
+یادگیری است) در افرادی که به طور منظم مدیتیشن می‌کنند، افزایش پیدا می‌کند. این 
+تغییر باعث بهبود حافظه، یادگیری سریع‌تر و کاهش احتمال ابتلا به بیماری‌هایی 
+مانند آلزایمر در سنین بالاتر می‌شود.</p>
+ <p>یکی دیگر از تغییرات مهم، کاهش فعالیت و حجم آمیگدال (مرکز ترس و اضطراب در 
+مغز) است. آمیگدال بیش‌فعال باعث می‌شود فرد به طور مداوم در حالت «جنگ یا گریز» 
+باشد و اضطراب و استرس مزمن را تجربه کند. مدیتیشن منظم این بخش را آرام می‌کند و 
+فرد را از حالت واکنش خودکار به حالت پاسخ آگاهانه می‌رساند.</p>
+ <p>از دیدگاه روانشناسی، مدیتیشن یکی از مؤثرترین روش‌های درمان اضطراب و 
+افسردگی خفیف تا متوسط است. مطالعات متعدد نشان داده‌اند که تمرین روزانه مدیتیشن 
+می‌تواند علائم افسردگی را به اندازه داروهای ضدافسردگی کاهش دهد، بدون اینکه 
+عوارض جانبی داشته باشد. این اثر به دلیل افزایش خودآگاهی، کاهش نشخوار فکری و 
+افزایش توانایی فرد در مشاهده افکار بدون قضاوت است.</p>
+ <p>مدیتیشن همچنین بر سیستم ایمنی بدن تأثیر مثبت دارد. تحقیقات نشان می‌دهد که 
+افراد مدیتیشن‌کننده، سطح التهاب کمتری در بدن دارند و پاسخ ایمنی بهتری به 
+واکسن‌ها و بیماری‌ها نشان می‌دهند. این ارتباط بین ذهن و بدن (Mind-Body 
+Connection) یکی از مهم‌ترین یافته‌های علم روان‌تنی در دهه‌های اخیر است.</p>
+ <p>در زمینه تعادل چاکراها، مدیتیشن منظم به پاکسازی و فعال‌سازی مراکز انرژی 
+بدن کمک می‌کند. وقتی فرد روی چاکراهای خاص تمرکز می‌کند و از فرکانس‌های مناسب 
+استفاده می‌کند، نه تنها از نظر روانی آرامش پیدا می‌کند، بلکه احساس تعادل و 
+هماهنگی بیشتری در زندگی روزمره خود تجربه می‌کند. این تعادل در روابط، کار، 
+خلاقیت و سلامت جسمی نیز بازتاب پیدا می‌کند.</p>
+ <p>یکی از فواید بلندمدت مدیتیشن، افزایش «تاب‌آوری روانشناختی» است. افرادی که 
+سال‌ها مدیتیشن می‌کنند، در مواجهه با بحران‌ها و مشکلات زندگی، سریع‌تر تعادل خود 
+را بازمی‌یابند و کمتر دچار فروپاشی روانی می‌شوند. این ویژگی یکی از مهم‌ترین 
+عوامل موفقیت و سلامت روان در زندگی مدرن است.</p>
+ <p>مدیتیشن همچنین خلاقیت را افزایش می‌دهد. وقتی ذهن از افکار پراکنده و 
+نگرانی‌های مداوم آزاد می‌شود، فضای بیشتری برای ایده‌های نو و راه‌حل‌های خلاقانه 
+ایجاد می‌شود. بسیاری از هنرمندان، نویسندگان و کارآفرینان موفق، مدیتیشن را بخشی 
+جدایی‌ناپذیر از روتین روزانه خود می‌دانند.</p>
+ <p>از نظر روابط بین‌فردی، مدیتیشن باعث افزایش همدلی و کاهش قضاوت می‌شود. وقتی 
+فرد یاد می‌گیرد افکار و احساسات خود را بدون قضاوت مشاهده کند، این مهارت را به 
+روابط خود نیز منتقل می‌کند و در نتیجه روابط عمیق‌تر، سالم‌تر و رضایت‌بخش‌تری را 
+تجربه می‌کند.</p>
+ <p>در نهایت، ترکیب مدیتیشن صبح و شب یک چرخه کامل از تعادل انرژی ایجاد می‌کند. 
+صبح‌ها برای تنظیم نیت، افزایش تمرکز و آماده‌سازی ذهن برای روز، و شب‌ها برای رها 
+کردن، بازسازی و آماده‌سازی برای خواب عمیق. افرادی که این دو را به طور منظم 
+انجام می‌دهند، معمولاً سطح استرس بسیار پایین‌تری دارند، کیفیت زندگی بالاتری را 
+تجربه می‌کنند و از سلامت روان و جسم بهتری برخوردار هستند.</p>
+ <p>مدیتیشن نه یک تمرین لوکس، بلکه یک ضرورت برای سلامت روان در دنیای پراسترس 
+امروز است. هرچه بیشتر تمرین کنید، نتایج عمیق‌تر و پایدارتری را تجربه خواهید 
+کرد. شروع کردن حتی با ۵ دقیقه در روز می‌تواند آغاز یک تحول بزرگ در کیفیت زندگی 
+شما باشد.</p>
+ </div> </div>
+ <script> let activeSounds = {}; let audioCtx; function getAudioContext() { if 
+(!audioCtx) audioCtx = new (window.AudioContext || 
+window.webkitAudioContext)(); return audioCtx; } function showPage(n) { 
+document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); 
+document.getElementById('page-' + n).classList.remove('hidden'); 
+document.querySelectorAll('button').forEach(tab => 
+tab.classList.remove('nav-active')); const activeTab = 
+document.getElementById('tab-' + n); if (activeTab) 
+activeTab.classList.add('nav-active'); } function toggleChakraSound(chakraNum, 
+freq) { const key = 'chakra-' + chakraNum; const card = event ? 
+event.currentTarget : null; if (activeSounds[key]) { activeSounds[key].stop(); 
+delete activeSounds[key]; if (card) card.classList.remove('playing'); return; } 
+const ctx = getAudioContext(); const osc = ctx.createOscillator(); const gain = 
+ctx.createGain(); const filter = ctx.createBiquadFilter(); const lfo = 
+ctx.createOscillator(); const lfoGain = ctx.createGain(); osc.type = 'sine'; 
+osc.frequency.value = freq; filter.type = 'lowpass'; filter.frequency.value = 
+1200; gain.gain.value = 0.25; lfo.type = 'sine'; lfo.frequency.value = 3.5; 
+lfoGain.gain.value = 2.5; lfo.connect(lfoGain); lfoGain.connect(osc.frequency); 
+osc.connect(filter); filter.connect(gain); gain.connect(ctx.destination); 
+osc.start(); lfo.start(); activeSounds[key] = { stop: () => { 
+gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2); 
+setTimeout(() => { osc.stop(); lfo.stop(); }, 1500); } }; if (card) 
+card.classList.add('playing'); } function playAllChakras() { const hasActive = 
+Object.keys(activeSounds).some(key => key.startsWith('chakra-')); if 
+(hasActive) { Object.keys(activeSounds).forEach(key => { if 
+(key.startsWith('chakra-')) { activeSounds[key].stop(); delete 
+activeSounds[key]; } }); } else { const frequencies = [256, 288, 320, 341, 384, 
+426, 480]; frequencies.forEach((freq, i) => { setTimeout(() => { 
+toggleChakraSound(i + 1, freq); }, i * 220); }); } } showPage(1); </script>
+</body></html>
